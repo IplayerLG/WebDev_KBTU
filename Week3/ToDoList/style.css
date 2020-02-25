@@ -1,0 +1,71 @@
+html, body, header {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header {
+    color: #787878;
+    background-color: black;
+    height: 50px;
+}
+#Logo {
+    margin-left: 5%;
+    position: absolute;
+}
+#Logo2 {
+    margin-left: 25%;
+    margin-top: 50px;
+    font-size: 40px;
+    color: #333340;
+}
+#myInput {
+    margin-left: 30%;
+    width: 40%;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #787878;
+}
+.addBtn {
+    margin-left: 10px;
+    background-color: #4479B2;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+ul {
+    margin: 10px 20%;
+    padding: 0;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style-type: none;
+    border-color: #333340;
+    border-width: 1px;
+    border-style: solid;
+}
+li {
+    margin-top: 8px;
+    padding: 10px;
+    height: 25px;
+}
+ul li.checked {
+    text-decoration: line-through;
+}
+.addBtn:hover {
+    background-color: #3560BE;
+}
+.close {
+    float: right;
+    margin-top: 0;
+    height: 25px;
+    width: 25px;
+}
