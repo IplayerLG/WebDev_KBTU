@@ -1,0 +1,12 @@
+<div *ngFor="let category of categoriesWithProducts">
+  <h2>{{ category.name }}</h2>
+  <ul>
+    <li *ngFor="let product of category.products">
+      <a [routerLink]="'/films/' + product.id" (click) = click()>
+        <p>title: {{product.title}}</p>
+        <p>description: {{product.description}}</p>
+        <p>view_count: {{product.view_count}}</p>
+      </a>
+    </li>
+  </ul>
+</div>

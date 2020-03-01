@@ -7,7 +7,6 @@ html, body, .logo{
 .logo {
     background-color:#44598F;
     height: 90px;
-    
 }
 #logo {
     margin-left: 15%;
@@ -85,6 +84,10 @@ html, body, .logo{
     padding-top: 1.75%;
     margin-left: 55%;
     width: 35%;
+}
+.red {
+    background-color: red;
+    height: 90px;
 }
 .input {
     width: 48%;

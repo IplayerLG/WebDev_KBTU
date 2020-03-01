@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" type="text/css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <header class="logo">
+        <p id="logo">facebook</p>
+        <div class="number">
+            <label for="number1">Электронный адрес или номер телефонa</label>
+            <input type="text", id="number1", name="number">
+        </div>
+        <div class="pass">
+            <label for="password", class="label">Пароль</label>
+            <br>
+            <input type="password", id="password", name="password">
+            <br>
+            <a href="https://www.facebook.com/recover/initiate?lwv=110&ars=royal_blue_bar" class = "link">Забыли аккаунт?</a>
+        </div>
+        <button class = "but1" onclick="changeColor()">Вход</button>
+    </header>
+    <div class="main_page">
+        <div class = "map">
+            <p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+            <image src="images/map.png" alt="LOL" id = "map"/>
+        </div>
+        <div class = "form">
+            <h1>Регистрация</h1>
+            <p>Быстро и легко.</p>
+            <div class="FIO">
+                <input type="text" value="Имя" class="input">
+                <input type="text" value="Фамилия" class="input">
+            </div>
+            <input type="text" value="Номер мобильного телефона или эл. адрес" class="input" id="number">
+            <input type="text" value="Новый пароль" class="input" id="number">
+            <section class="data">
+                <br>
+                <label for="data">Дата рождения</label>
+                <br>
+                <input type="number" id="data" name="data">
+            </section>
+            <section class="male">
+                <span>Пол</span>
+            </section>
+            
+
+        </div>
+    </div>
+    <footer>
+        <div class="language">
+            <p>Русский English (US) Türkçe Bahasa Indonesia 中文(简体) Қазақша Deutsch 한국어 Shqip Español Português (Brasil)</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
