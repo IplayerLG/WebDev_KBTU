@@ -1,0 +1,14 @@
+<div *ngFor="let item of items">
+  <h3>
+    <a href={{item.link}}>
+      {{item.name}}
+    </a>
+  </h3>
+  <p>
+    Rating: {{item.rating}}
+  </p>
+  <img src={{item.image}} alt="" width="100" height="100">
+  <p *ngIf="item.description">
+    Description: {{item.description}}
+  </p>
+</div>
