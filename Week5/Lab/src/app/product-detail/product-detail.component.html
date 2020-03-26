@@ -1,0 +1,8 @@
+<h1>{{product.name}}</h1>
+<p class="rating">{{product.rating}}</p>
+<img src={{product.image}} width="120">
+<p *ngIf="product.description">Description: {{product.description}}</p>
+<a href={{product.link}}>
+    <button>Buy</button>
+</a>
+<button (click)="goBack()">Back</button>

@@ -1,0 +1,14 @@
+<h3>Category name: {{category.name}}</h3> 
+<div *ngFor = "let product of category.products" class = 'products'>
+    <img src={{product.image}} alt="" width="120">
+    <br>
+    <span>Product name: </span> {{product.name}}
+    <div *ngIf = 'product.description'>
+        <span>Description: {{product.description}}</span>
+    </div>
+    <a routerLink="/products/{{product.id}}">
+        <button>More Info</button>
+    </a>
+</div>
+
+<button (click)="goBack()">Back</button>

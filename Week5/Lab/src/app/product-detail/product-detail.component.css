@@ -1,0 +1,14 @@
+.rating {
+    padding: 5px;
+    background-color: yellow;
+    width: 10%;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+button {
+    margin: 3px;
+}
