@@ -43,8 +43,10 @@ export class SaleDetailComponent implements OnInit {
   }
   subs(): void {
     this.user.sales.push(this.sale.id);
+    this.sale.subscribers++;
   }
   unsubs(): void {
     this.user.sales = this.user.sales.filter(sale => sale !== this.sale.id)
+    this.sale.subscribers--;
   }
 }
