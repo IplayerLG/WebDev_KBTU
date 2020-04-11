@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule }    from '@angular/common/http';
+import { FormsModule }    from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { CreateEventComponent } from './create-event/create-event.component';
 import { UserAccountComponent } from './user-account/user-account.component';
 import { SaleDetailComponent } from './sale-detail/sale-detail.component';
+
 
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -34,6 +36,7 @@ import { ChangeComponent } from './change/change.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(

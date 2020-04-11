@@ -11,3 +11,8 @@
 .sales:hover {
     color: darkred;
 }
+.in {
+    border-color: black;
+    border-size: 1px;
+    font-size: 20px;
+}

@@ -47,4 +47,9 @@ export class SaleService {
       catchError(this.handleError<Sale>('deleteSale'))
     );
   }
+  updateSale (sale: Sale): Observable<any> {
+    return this.http.put(this.salesUrl, sale, this.httpOptions).pipe(
+      catchError(this.handleError<any>('updateSale'))
+    );
+  }
 }
