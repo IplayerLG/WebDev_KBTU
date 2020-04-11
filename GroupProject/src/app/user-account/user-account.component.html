@@ -1,0 +1,18 @@
+<app-navigation></app-navigation>
+<div class="body">
+    <p>Hi {{user.name}} at this page you can change your personal information</p>
+    <p>Your sales: <a *ngFor="let sale of user.sales" class="sales" routerLink="/detail/{{sale}}">
+        {{sale}}
+    </a></p>
+    <!-- <label>Name:
+        <input [(ngModel)]="user.name" placeholder="name"/>
+    </label>
+    <br>
+    <label>Card:
+        <input [(ngModel)]="user.card" placeholder="card"/>
+    </label>
+    <br>
+    <label>CVV:
+        <input [(ngModel)]="user.card" placeholder="card"/>
+    </label> -->
+</div>

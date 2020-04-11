@@ -1,0 +1,22 @@
+<app-navigation></app-navigation>
+<div class="body">
+    <div *ngFor="let sale of sales" class = "box">
+        <a routerLink="/detail/{{sale.id}}">
+            <div class="info">
+                Company: {{sale.company}}
+                <br>
+                Deadline: {{sale.deadline}}
+                <br>
+                Cost: {{sale.cost}}
+                <br>
+                Discription: {{sale.Discription}}
+                <br>
+                Status: {{sale.subscribers}} / {{sale.value}}
+            </div>
+            <div *ngIf="sale.images.length" class="img">
+                <img src={{sale.images[0]}} alt="" width=250>
+            </div>
+            
+        </a>
+    </div>
+</div>

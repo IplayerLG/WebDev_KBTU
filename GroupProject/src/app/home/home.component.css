@@ -1,0 +1,26 @@
+.body{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+}
+.box{
+    text-decoration: none;
+    border-color: rgba(83, 81, 81, 0.8);
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+/* .box:hover {
+    background-color: rgba(83, 81, 81, 0.3);
+} */
+.info{
+    text-decoration: none;
+    color: black;
+}
+.add{
+    margin-left: 60%;
+}

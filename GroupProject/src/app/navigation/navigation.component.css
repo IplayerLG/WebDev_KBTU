@@ -1,0 +1,23 @@
+.nav {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.box {
+
+}
+.home {
+    margin-left: 
+}
+nav {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-color: rgba(83, 81, 81, 0.8);
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    border-radius: 3px;
+}
