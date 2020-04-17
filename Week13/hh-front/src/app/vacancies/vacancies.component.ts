@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { VacancyService } from '../vacancy.service';
+import { Vacancy } from '../vacancy';
 
 @Component({
   selector: 'app-vacancies',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VacanciesComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private vacancyService: VacancyService) { }
+  vacancies : Vacancy[];
   ngOnInit(): void {
+    this.getVacancies()
   }
-
+  getVacancies(): void {
+    this.vacancyService.getVacancyList().subscribe(
+      vacancies => this.vacancies = vacancies
+    )
+  }
 }

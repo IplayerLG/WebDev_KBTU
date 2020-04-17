@@ -12,7 +12,7 @@ export class CompanyService {
   constructor(private http: HttpClient) { }
   BASE_URL = 'http://localhost:8000'
   getCompanyList(): Observable<Company[]> {
-    return this.http.get<Company[]>(`${this.BASE_URL}/api/companies`);
+    return this.http.get<Company[]>(`${this.BASE_URL}/api/companies/`);
   }
   getCompany(id): Observable<Company> {
     return this.http.get<Company>(`${this.BASE_URL}/api/companies/${id}/`);
