@@ -43,11 +43,11 @@ export class SaleDetailComponent implements OnInit {
   subs(): void {
     this.sale.user = this.user.id;
     this.sale.subscribers++;
-    this.saleService.updateSale(this.sale);
+    this.saleService.updateSale(this.sale).subscribe();
   }
   unsubs(): void {
-    this.sale.user = undefined;
+    this.sale.user = 0;
     this.sale.subscribers--;
-    this.saleService.updateSale(this.sale);
+    this.saleService.updateSale(this.sale).subscribe();
   }
 }
