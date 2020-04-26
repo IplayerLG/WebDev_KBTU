@@ -30,7 +30,10 @@ export class ChangeComponent implements OnInit {
     this.location.back();
   }
   save(): void {
-    this.saleService.updateSale(this.sale)
-      .subscribe(() => this.goBack());
+    this.saleService.deleteSale(this.sale).subscribe()
+    this.saleService.addSale(this.sale).subscribe()
+    this.goBack()
+    // this.saleService.updateSale(this.sale)
+    //   .subscribe(() => this.goBack());
   }
 }

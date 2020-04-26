@@ -30,7 +30,6 @@ export class SaleService {
   }
   deleteSale (sale: Sale | number): Observable<Sale> {
     const id = typeof sale === 'number' ? sale : sale.id;
-
     return this.http.delete<Sale>(`${this.BASE_URL}/api/sales/${id}/`, this.httpOptions);
   }
   updateSale (sale: Sale): Observable<any> {
