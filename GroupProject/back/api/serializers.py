@@ -16,4 +16,4 @@ class SaleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Sale
         fields = ('id', 'company', 'deadline', 'subscribers', 'value', 'cost', 'description', 'image', 'user')
-
+        write_only_fields = ('Company', 'cost', 'deadline', 'value', 'image')
