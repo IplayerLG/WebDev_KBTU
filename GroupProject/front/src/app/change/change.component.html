@@ -1,0 +1,37 @@
+<div class="body">
+    <h2>{{sale.company | uppercase}} Details</h2>
+    <div><span>id: </span>{{sale.id}}</div>
+    <div>
+        <label>Company:
+            <input [(ngModel)]="sale.company" placeholder="name" class="in"/>
+        </label>
+        <br>
+        <label>Cost:
+            <input [(ngModel)]="sale.cost" placeholder="name" class="in"/>
+        </label>
+        <br>
+        <label>Deadline:
+            <input [(ngModel)]="sale.deadline" placeholder="name" class="in"/>
+        </label>
+        <br>
+        <label>Value:
+            <input [(ngModel)]="sale.value" placeholder="name" class="in"/>
+        </label>
+        <br>
+        <label>Add image:
+            <input [(ngModel)]="sale.image" placeholder="name" class="in"/>
+        </label>
+        
+    </div>
+    <!-- company : string,
+    deadline : Date,
+    subscribers : number,
+    value : number,
+    cost : number,
+    discription : string,
+    id : number,
+    images : string[], -->
+    <!-- <button (click)="addImage(img)" class="add">Add</button> -->
+    <button (click)="save()" class="add">Save</button>
+</div>
+

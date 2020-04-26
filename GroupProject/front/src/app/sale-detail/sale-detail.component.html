@@ -1,0 +1,19 @@
+<app-navigation></app-navigation>
+<div class="body">
+    <div *ngIf="sale.image">
+        <img src={{sale.image}} alt="" class="img" width=250>
+    </div>
+    <div class="info">
+        Company: {{sale.company}}
+        <br>
+        Deadline: {{sale.deadline}}
+        <br>
+        Cost: {{sale.cost}}
+        <br>
+        Discription: {{sale.description}}
+        <br>
+        Status: {{sale.subscribers}} / {{sale.value}}
+    </div>
+    <button class="subs" *ngIf="status()" (click)="subs()">Subscribe</button>
+    <button class="subs" *ngIf="!status()" (click)="unsubs()">UnSubscribe</button>
+</div>
