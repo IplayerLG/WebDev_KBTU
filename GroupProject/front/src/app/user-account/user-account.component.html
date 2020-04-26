@@ -1,8 +1,8 @@
 <app-navigation></app-navigation>
 <div class="body">
     <p>Hi {{user.name}} at this page you can change your personal information</p>
-    <p>Your sales: <a *ngFor="let sale of sales"  class="sales" routerLink="/detail/{{sale}}">
-        <p *ngIf="sale.user_id == user.id"> {{sale}} </p>
+    <p>Your sales: <a *ngFor="let sale of sales"  class="sales" routerLink="/detail/{{sale.id}}">
+        <div *ngIf="sale.user == user.id"> {{sale.id}} </div>
     </a></p>
     <label>Name:
         <input [(ngModel)]="user.name" placeholder="name" class="in"/>

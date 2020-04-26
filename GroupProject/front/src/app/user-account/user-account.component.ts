@@ -24,6 +24,7 @@ export class UserAccountComponent implements OnInit {
   
   ngOnInit(): void {
     this.getUser();
+    this.getSales();
   }
   getUser(): void {
     this.authService.getUserDetails(1).subscribe(
